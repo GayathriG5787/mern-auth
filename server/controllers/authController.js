@@ -1,10 +1,10 @@
 import bcrypt from 'bcrypt';
-import { JsonWebToken } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import userModel from '../models/userModels.js';
 
 export const register = async (req, res) => {
 
-    const [name, email, password] = req.body;
+    const {name, email, password} = req.body;
 
     if (!name || !email || !password) {
         return res.json({success: false, message: 'Missing Details'
