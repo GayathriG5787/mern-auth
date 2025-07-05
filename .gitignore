@@ -1,0 +1,25 @@
+# Ignore node_modules inside server only
+/server/node_modules/
+/client/node_modules/
+
+# Ignore environment files
+*.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore build or dist folders
+/client/build/
+server/dist/
+
+# Ignore coverage reports
+coverage/
+
+# VS Code settings (optional)
+.vscode/
